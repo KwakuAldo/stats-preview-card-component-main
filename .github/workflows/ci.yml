@@ -27,7 +27,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v6
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/hello-docker-app
+          images: ${{ secrets.DOCKER_USERNAME }}/stats-preview-card-component-main
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=sha,prefix=main-
